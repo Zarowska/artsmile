@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+
+<body>
+
+<header class="header">
+       <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">The Art of Smile</div>
+            <nav class="nav">
+                <a class="nav__link active" href="/">Home</a>
+                <a class="nav__link active" href="/about">About</a>
+                <a class="nav__link active" href="/services">Services</a>
+                <a class="nav__link active" href="/gallery">Gallery</a>
+                <a class="nav__link active" href="/contact">Contact us</a>
+                <a class="nav__link active" href="/disabled"><button id="close-CSS"></button></a>
+             </nav>
+        </div>
+    </div>
+    </header>
+
+
+{% block templatesbody %}{% endblock %}
+
+
+<footer class="footer">
+   <div class="container">
+      <div class="footer__inner">
+         <div class="footer__col  footer__col--first">
+            <div class="footer__logo">The Art of Smile</div>
+            <div class="logo__img">
+               <img src="static/images/logo.jpg" alt="">
+            </div>
+         </div>
+         <!-- /.footer__col -->
+         <div class="footer__col  footer__col--second">
+            <table style="width:100%">
+               <caption> </caption>
+               <tr>
+                  <td><h4> Monday:</h4></td>
+                  <td>10:00 AM - 7:00 PM</td>
+               </tr>
+               <tr>
+                  <td><h4> Tuesday:</h4></td>
+                  <td>10:00 AM - 7:00 PM</td>
+               </tr>
+               <tr>
+                  <td><h4> Wednesday:</h4> </td>
+                  <td>10:00 AM - 7:00 PM</td>
+               </tr>
+               <tr>
+                  <td><h4> Thursday:</h4></td>
+                  <td>10:00 AM - 7:00 PM</td>
+               </tr>
+               <tr>
+                  <td><h4> Friday:</h4></td>
+                  <td>10:00 AM - 7:00 PM</td>
+               </tr>
+               <tr>
+                  <td> <h4> Saturday:</h4> </td>
+                  <td>10:00 AM - 7:00 PM</td>
+               </tr>
+               <tr>
+                  <td><h4> Sunday:</h4></td>
+                  <td>CLOSED</td>
+               </tr>
+            </table>
+         </div>
+         <div class="footer__col  footer__col--third">
+            <table style="width:100%">
+               <caption> </caption>
+                <tr>
+                  <td><h4>Phone:</h4> </td>
+                  <td><h4> +380 67 177 0778</h4></td>
+               </tr>
+                <tr>
+               <td><h4>Address:</h4></td>
+               <td>
+                  <p>Khimikiv St, 5b, Ivano-Frankivsk</p>
+                  <p>Ivano-Frankivs'ka oblast</p>
+                  <p>Ukraine, 77423</p>
+               </td>
+                 </tr>
+               <tr>
+                  <td><a href="https://www.facebook.com/MystectvoPosmishky/">Facebook</a></td>
+               </tr>
+               <tr>
+                  <td><a href="https://www.instagram.com/mystectvo_posmishky/">Instagram</a></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <!-- /.footer__inner -->
+      <div class="copyright">
+         © 2021
+      </div>
+   </div>
+   <!-- /.container -->
+</footer>
+
+</body>
+
+</html>
+
+
