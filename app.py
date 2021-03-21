@@ -31,9 +31,9 @@ def gallery():
 def price():
     return render_template("disabled.html")
 
-@app.route('/article')
+@app.route('/aits')
 def services():
-    return render_template("article.html")
+    return render_template("aits.html")
 
 
 if __name__ == '__main__':
@@ -63,14 +63,14 @@ def delete_cookie():
 
 
 # ...
-@app.route('/article/', methods=['POST', 'GET'])
-def article():
+@app.route('/aits/', methods=['POST', 'GET'])
+def aits():
     if request.method == 'POST':
         print(request.form)
         res = make_response("")
         res.set_cookie("font", request.form.get('font'), 60 * 60 * 24 * 15)
-        res.headers['location'] = url_for('article')
+        res.headers['location'] = url_for('aits')
         return res, 302
 
-    return render_template('article.html')
+    return render_template('aits.html')
 # ...
