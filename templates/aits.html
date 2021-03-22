@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
-    <title>AiTS</title>
+    <title>aits</title>
 </head>
 <body style="{% if request.cookies.get('font') %}font-family:{{ request.cookies.get('font') }}{% endif %}">
 
@@ -23,6 +23,15 @@
         </div>
     </div>
     </header>
+
+<form action="/">
+    <input type="submit" value="test" />
+</form>
+
+ <form>
+ <input type="button" value="test2" onclick="history.back()">
+</form>
+
 
 
 <section class=" ">

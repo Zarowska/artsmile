@@ -163,7 +163,7 @@ margin-top: 50px;
     height: 720px;
     max-width: 1200px;
     margin: 0 auto 30px;
-    background: url("../images/about/44.jpg") center no-repeat;
+    background: url("../images/about/4.jpg") center no-repeat;
 
 }
 
@@ -301,7 +301,7 @@ button {
 
 
 #close-CSS {
-    background-image: url("../images/icon2.jpg");
+    background-image: url("../images/icon.jpg");
     background-size: 50px 50px;
     background-color: black;
     height: 50px;
