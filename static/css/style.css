@@ -310,7 +310,7 @@ button {
 }
 
 
-#close-CSS {
+.close-CSS {
     background-image: url("../images/icon.jpg");
     background-size: 50px 50px;
     background-color: black;
