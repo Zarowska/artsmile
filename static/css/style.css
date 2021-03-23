@@ -310,7 +310,16 @@ button {
 }
 
 
-.close-CSS {
+#close-CSS {
+    background-image: url("../images/icon.jpg");
+    background-size: 50px 50px;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    position: center;
+}
+
+.button__aits{
     background-image: url("../images/icon.jpg");
     background-size: 50px 50px;
     background-color: black;
@@ -331,7 +340,7 @@ border-top: 1px solid #e5e5e5;
     max-width: 950px;
     max-height: 950px;
     margin: 0 auto 40px ;
-     margin-top: 50px;
+     margin-top: 110px;
 
 }
 
