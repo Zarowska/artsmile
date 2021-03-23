@@ -1,8 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
-
 <head>
-    <META HTTP-EQUIV="Content-Language" CONTENT="pl-PL">
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
     <title>aits</title>
@@ -68,7 +66,6 @@ I saw the photograph                  <br>
 <section class=" ">
     <div class="container_project">
         <h2>Serwis przygotowany dla kliniki stomatologicznej.</h2>
-         <a href="https://github.com/Zarowska/artsmile">Projekt na GitHub</a>
 <ul>
  <li>Serwis zrealizowany na bazie HTML 4.01 Strict</li>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -76,30 +73,26 @@ I saw the photograph                  <br>
     <a href=" https://github.com/Zarowska/artsmile/blob/main/static/css/style.css">Kod CSS na GitHub</a>
 
   <li>Dostępność dla niepełnosprawnych</li>
-    <a href="https://art-smile.herokuapp.com/disabled">Strona dla niepełnosprawnych</a>
-    <a href="https://github.com/Zarowska/artsmile/blob/main/templates/disabled.html">Kod HTML na GitHub</a>
+    <a href=" https://github.com/Zarowska/artsmile/blob/main/static/css/style.css">Kod CSS na GitHub</a>
+    https://art-smile.herokuapp.com/disabled
+    https://github.com/Zarowska/artsmile/blob/main/templates/disabled.html
+  <li>Serwis wykorzystuje co najmniej jedną wybraną technologię ciasteczk</li>
+    https://github.com/Zarowska/artsmile/blob/main/app.py
+@app.route('/cookie/')
+def cookie():
 
+@app.route('/delete-cookie/')
+def delete_cookie():
 
-  <li>Serwis wykorzystuje technologię ciasteczek</li>
-     <a href="https://github.com/Zarowska/artsmile/blob/main/app.py">Kod py na GitHub</a>
-
-    @app.route('/cookie/')<br>
-def cookie():<br>
-<br>
-@app.route('/delete-cookie/')<br>
-def delete_cookie():<br>
-<br>
-@app.route('/aits/', methods=['POST', 'GET'])<br>
-def aits():<br>
+@app.route('/aits/', methods=['POST', 'GET'])
+def aits():
 
   <li>Serwis zawiera stronę poświęconą opisowi samego serwisu</li>
-    <a href="https://art-smile.herokuapp.com/aits">Strona dla niepełnosprawnych</a>
-    <a href="https://github.com/Zarowska/artsmile/blob/main/templates/aits.html">Kod HTML na GitHub</a>
+    użyte technologii: Python Flask, HTML, CSS
+dla łatwej nawigacji stworzono nagłówek z przysmaki
+stron a może być wykorzystana jako web site dla klinikami stomatologiczne, dla jej publikacji nnie wystarcza adaptacji do mobilnych urządzeń.
 
-   <li>Inne</li>
-    użyte technologii: Python Flask, HTML, CSS<br>
-    dla łatwej nawigacji stworzono nagłówek z przyciskami<br>
-    serwis może być wykorzystany jako web site dla kliniki stomatologicznej, dla publikacji nie wystarcza adaptacji do mobilnych urządzeń.
+  <li>Inne</li>
 </ul>
 
 </div>
