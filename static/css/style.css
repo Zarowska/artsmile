@@ -31,18 +31,10 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto 50px;
     margin-top: 50px;
-    background-color: #999999;
+    background-color: #ffe6f3;
 }
 
 
-.container_project
-{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 50px;
-    margin-top: 50px;
-    background-color: #ffe6f3 ;
-}
 
 /* Intro */
 .intro {

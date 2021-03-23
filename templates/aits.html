@@ -5,61 +5,58 @@
 	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
     <title>aits</title>
 </head>
+
 <body style="{% if request.cookies.get('font') %}font-family:{{ request.cookies.get('font') }}{% endif %}">
 
 <header class="header">
-       <div class="container">
-        <div class="header__inner">
-            <div class="header__logo">Projekt w ramach AiTS </div>
-            <nav class="nav">
-             <form>
+   <div class="container">
+    <div class="header__inner">
+        <div class="header__logo">Projekt w ramach AiTS </div>
+        <nav class="nav">
+			<form>
 				<input type="button" value="Go back" onclick="history.back()">
 			</form>
-            <form>
+			<form>
 				<input type="button"  value="About" onclick=window.open("/about");>
 			</form>
-                <a class="nav__link active" href="/disabled"><h1>disabled</h1></a>
-             <a class="nav__link active" href="/disabled"><button id="close-CSS"></button></a>
-
-             </nav>
-        </div>
+			<a class="nav__link active" href="/disabled"><h1>disabled</h1></a>
+			<a class="nav__link active" href="/disabled"><button id="close-CSS"></button></a>
+	    </nav>
     </div>
-    </header>
+</div>
+</header>
 
 <form action="/">
     <input type="submit"  />
 </form>
 
- <form>
+<form>
  <input type="button"  onclick="history.back()">
 </form>
 
 
-
 <section class=" ">
     <div class="container_cookies">
-
-Select Font Preference: <br>
-<form action="" method="post">
-    <select name="font" onchange="submit()">
-        <option value="">----</option>
-        <option value="consolas" {% if request.cookies.get('font') == 'consolas' %}selected{% endif %}>consolas</option>
-        <option value="arial" {% if request.cookies.get('font') == 'arial' %}selected{% endif %}>arial</option>
-        <option value="verdana" {% if request.cookies.get('font') == 'verdana' %}selected{% endif %}>verdana</option>
-    </select>
-</form>
-
-	<h2>Serwis przygotowany dla kliniki stomatologicznej.</h2>
-  Serwis zrealizowany na bazie HTML 4.01 Strict<br>
-  Formatowanie przy użyciu CSS<br>
-  Dostępność dla niepełnosprawnych<br>
-  Serwis wykorzystuje technologię ciasteczek<br>
-  Serwis zawiera stronę poświęconą opisowi samego serwisu<br>
-  Użyte technologii: Python Flask, HTML, CSS<br>
-Dla łatwej nawigacji stworzono nagłówek z przyciskami
-
-</div>
-
+	Select Font Preference: <br>
+		<form action="" method="post">
+			<select name="font" onchange="submit()">
+				<option value="">----</option>
+				<option value="consolas" {% if request.cookies.get('font') == 'consolas' %}selected{% endif %}>consolas</option>
+				<option value="arial" {% if request.cookies.get('font') == 'arial' %}selected{% endif %}>arial</option>
+				<option value="verdana" {% if request.cookies.get('font') == 'verdana' %}selected{% endif %}>verdana</option>
+			</select>
+		</form>
+		
+		<h2>Serwis przygotowany dla kliniki stomatologicznej.</h2>
+		<A href="https://github.com/Zarowska/artsmile">Kod na GitHub</A>. <br>
+		Serwis zrealizowany na bazie HTML 4.01 Strict<br>
+		Formatowanie przy użyciu CSS<br>
+		Dostępność dla niepełnosprawnych<br>
+		Serwis wykorzystuje technologię ciasteczek<br>
+		Serwis zawiera stronę poświęconą opisowi samego serwisu<br>
+		Użyte technologii: Python Flask, HTML, CSS<br>
+		Dla łatwej nawigacji stworzono nagłówek z przyciskami
+	</div>
 </section>
 
 </body>
