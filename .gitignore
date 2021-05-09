@@ -1,0 +1,7 @@
+*.class
+/.idea
+/static
+/venv
+Procfile
+README.md
+/flaskProject - Shortcut
